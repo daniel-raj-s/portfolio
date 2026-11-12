@@ -6,6 +6,10 @@
 [![Live Site](https://img.shields.io/badge/Live%20Portfolio-daniel--raj--s.github.io%2Fportfolio-00f2fe?style=for-the-badge&logo=github)](https://daniel-raj-s.github.io/portfolio/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/Deployment-GitHub%20Pages-success?style=for-the-badge&logo=githubactions)](https://github.com/daniel-raj-s/portfolio/actions/workflows/static.yml)
+[![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)](https://playwright.dev)
+[![AWS Bedrock](https://img.shields.io/badge/AWS%20Bedrock-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/bedrock/)
+[![Claude](https://img.shields.io/badge/Claude%20AI-D97706?style=for-the-badge&logo=anthropic&logoColor=white)](https://anthropic.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 
 ---
 
