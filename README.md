@@ -1,7 +1,7 @@
-# ⚡ Daniel Raj S — Portfolio Website & Engineering Blueprints
+# ⚡ Daniel Raj S, Portfolio Website & Engineering Blueprints
 
 > **Agentic Quality Engineer | AI-Driven Test Automation | Senior SDET**  
-> *I build quality systems that don't just find bugs — they investigate, explain, and fix them.*
+> *I build quality systems that don't just find bugs, they investigate, explain, and fix them.*
 
 [![Live Site](https://img.shields.io/badge/Live%20Portfolio-daniel--raj--s.github.io%2Fportfolio-00f2fe?style=for-the-badge&logo=github)](https://daniel-raj-s.github.io/portfolio/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
@@ -21,7 +21,7 @@ This repository hosts the source code for my personal portfolio website, enginee
 
 ### ✨ Key Interactive Features
 
-1. **Interactive Trace Analysis Simulator**: Experience my production **Autonomous Playwright Trace Analysis Pipeline** directly in the browser — simulating DOM wait timeline extraction, zero-token deduplication error hashing, multi-model AI diagnosis (Claude 3.7 on Bedrock, GPT-4o, Gemini 2.5), and automatic fix PR generation.
+1. **Interactive Trace Analysis Simulator**: Experience my production **Autonomous Playwright Trace Analysis Pipeline** directly in the browser, simulating DOM wait timeline extraction, zero-token deduplication error hashing, multi-model AI diagnosis (Claude 3.7 on Bedrock, GPT-4o, Gemini 2.5), and automatic fix PR generation.
 2. **Interactive Developer CLI Terminal**: A functional browser-based terminal shell. Run commands like `skills`, `experience`, `projects`, `stats`, `resume`, and `contact` or click quick-command chips.
 3. **Dynamic Filtering**: Filter open-source engineering blueprints across *AI & Agentic Systems*, *Playwright Blueprints*, and *Enterprise BDD & CI/CD*.
 4. **Verified Single-Page ATS Resume**: Instant in-browser preview and one-click download for `Daniel_Raj_S_SDET_Resume.pdf`.

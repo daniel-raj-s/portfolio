@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DANIEL RAJ S — PORTFOLIO INTERACTIVITY & SIMULATOR ENGINE
+   DANIEL RAJ S, PORTFOLIO INTERACTIVITY & SIMULATOR ENGINE
    Agentic Quality Engineer | AI-Driven Test Automation | Senior SDET
    ========================================================================== */
 
@@ -121,7 +121,7 @@ const SIMULATOR_DATA = {
     dedupVerdict: "CACHE MISS · New error fingerprint ingested",
     aiModel: "Claude 3.7 Sonnet (AWS Bedrock)",
     summary: "Checkout CTA remained permanently disabled because upstream `/api/v2/payment/session` threw 502 Bad Gateway and the companion GraphQL query masked error in HTTP 200 envelope.",
-    failingAssertion: "tests/e2e/checkout-flow.spec.ts:84 — expect(checkoutBtn).toBeEnabled() timed out",
+    failingAssertion: "tests/e2e/checkout-flow.spec.ts:84, expect(checkoutBtn).toBeEnabled() timed out",
     trigger: "POST /graphql/checkout-session returned 200 with response.errors[0].message = 'Downstream timeout: ServiceUnavailable'",
     suspectedPR: "PR #1084 (e4a7b21) by dev-infra: 'Migrate payment session to internal gateway proxy'",
     suggestedFix: "Fix retry interceptor in PaymentGatewayService & add graceful UI error banner handling in CheckoutModal.tsx.",
@@ -144,7 +144,7 @@ const SIMULATOR_DATA = {
     dedupVerdict: "CACHE MISS · Prompt assembled with Git commit diff",
     aiModel: "GPT-4o (OpenAI Adapter)",
     summary: "Playwright strict-mode locator resolution failed because frontend A/B test added a secondary mobile 'Enroll Now' button matching `getByRole('button', { name: /enroll/i })`.",
-    failingAssertion: "tests/c4b/enterprise-catalog.spec.ts:42 — Error: strict mode violation: locator resolved to 2 elements",
+    failingAssertion: "tests/c4b/enterprise-catalog.spec.ts:42, Error: strict mode violation: locator resolved to 2 elements",
     trigger: "Resolved to <button class='btn-desktop'>Enroll Now</button> and <button class='btn-mobile-sticky'>Enroll Now</button>",
     suspectedPR: "PR #1420 (a89df01) by product-growth: 'Introduce sticky bottom action bar on tablet viewports'",
     suggestedFix: "Scope locator to the desktop hero container or use explicit test id locator: `page.getByTestId('hero-enroll-cta')`.",
@@ -162,12 +162,12 @@ const SIMULATOR_DATA = {
     dedupVerdict: "CACHE HIT (0 Tokens Spent) · Reused prior verified triage from 2.4 hours ago",
     aiModel: "Zero AI Calls (Instant Deterministic Cache)",
     summary: "Exact normalized failure fingerprint matched active known issue INFRA-984. Instant triage returned in 120ms with 0 tokens spent.",
-    failingAssertion: "tests/integration/lms-sync.spec.ts:19 — Postgres connection pool timeout: client acquired 0/50",
+    failingAssertion: "tests/integration/lms-sync.spec.ts:19, Postgres connection pool timeout: client acquired 0/50",
     trigger: "Athena / Postgres sync worker pool stalled during scheduled ETL run",
     suspectedPR: "Linked Jira Incident: INFRA-984 (Database connection throttle during backup snapshot)",
     suggestedFix: "No test modification required. Pipeline retried automatically once DB pool stabilized.",
     slackBlockTitle: "♻️ Reused Analysis: Known Incident INFRA-984 (0 AI Tokens Used)",
-    diff: `// No PR opened — Incident automatically linked to existing Jira ticket:
+    diff: `// No PR opened, Incident automatically linked to existing Jira ticket:
 // Ticket: INFRA-984
 // Status: INVESTIGATING (Cloud Infrastructure Team)
 // Dedup Fingerprint: sha256:6e108bb78f001cda84b1279a01f9`
