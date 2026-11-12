@@ -312,11 +312,23 @@ function renderSimulatorOutput() {
           <strong>Root Trigger:</strong> ${data.trigger}
         </div>
       </div>
-      <div style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6;">
-        <p><strong style="color: var(--accent-cyan);">Suspected Origin:</strong> ${data.suspectedPR}</p>
-        <p><strong style="color: var(--accent-emerald);">AI Engine:</strong> ${data.aiModel}</p>
-        <p><strong style="color: var(--accent-amber);">Fingerprint:</strong> <code>${data.fingerprint}</code> (${data.dedupVerdict})</p>
-        <p style="margin-top: 0.5rem;"><strong style="color: var(--text-primary);">Actionable Recommendation:</strong> ${data.suggestedFix}</p>
+      <div class="sim-meta-table">
+        <div class="meta-row">
+          <span class="meta-key">Suspected Origin</span>
+          <span class="meta-val"><strong style="color: var(--accent-cyan);">${data.suspectedPR}</strong></span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-key">AI Engine</span>
+          <span class="meta-val"><strong style="color: var(--accent-emerald);">${data.aiModel}</strong></span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-key">Fingerprint Gate</span>
+          <span class="meta-val"><code>${data.fingerprint}</code> (${data.dedupVerdict})</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-key">Actionable Fix</span>
+          <span class="meta-val">${data.suggestedFix}</span>
+        </div>
       </div>
     `;
   } else if (currentTabKey === 'json') {

@@ -100,10 +100,16 @@
           <span>Open to Senior SDET &amp; AI Quality Engineer Roles</span>
         </div>
 
+        <div class="hero-greeting">Hi, I'm</div>
         <h1 class="hero-title">
-          Hi, I'm <span class="gradient-text">Daniel Raj S</span>
-          <span class="hero-role">&lt;Agentic Quality Engineer | Senior SDET /&gt;</span>
+          <span class="gradient-text">Daniel Raj S</span>
         </h1>
+
+        <div class="hero-role-wrapper">
+          <span class="role-symbol">&lt;</span>
+          <span>Agentic Quality Engineer · Senior SDET</span>
+          <span class="role-symbol">/&gt;</span>
+        </div>
 
         <p class="hero-tagline">
           I build quality systems that don't just find bugs — they <strong>investigate, explain, and fix them autonomously</strong>.
@@ -132,7 +138,7 @@
           </div>
           <div class="metric-item">
             <span class="metric-number" style="color: var(--accent-emerald);">20 min</span>
-            <span class="metric-label">TTR (Down from 2h)</span>
+            <span class="metric-label">TTR (From 2h)</span>
           </div>
           <div class="metric-item">
             <span class="metric-number" style="color: var(--accent-blue);">85%</span>
@@ -145,7 +151,7 @@
         </div>
       </div>
 
-      <!-- Hero Visual: Real Architecture Card -->
+      <!-- Hero Visual: Precision-Aligned Terminal -->
       <div class="hero-visual">
         <div class="terminal-card">
           <div class="terminal-header">
@@ -155,42 +161,42 @@
               <span class="terminal-dot dot-green"></span>
             </div>
             <span class="terminal-title">agentic-qa-daemon ~ coursera-integration</span>
-            <span style="font-size: 0.72rem; color: var(--accent-emerald); font-family: var(--font-mono);">ACTIVE</span>
+            <span style="font-size: 0.72rem; color: var(--accent-emerald); font-family: var(--font-mono); font-weight: 700;">ACTIVE</span>
           </div>
           <div class="terminal-body">
             <div class="terminal-line">
-              <span class="t-prompt">$</span>
-              <span class="t-cmd">playwright-trace-analysis --mode autonomous</span>
+              <span class="t-gutter t-prompt">$</span>
+              <span class="t-content t-cmd">playwright-trace-analysis --mode autonomous</span>
             </div>
             <div class="t-comment"># Ingesting trace.zip archive across parallel runners...</div>
             <div class="terminal-line">
-              <span class="t-success">✓</span>
-              <span>Extracted DOM timeline: 14 actions, 3 wait checkpoints</span>
+              <span class="t-gutter t-success">✓</span>
+              <span class="t-content">Extracted DOM timeline: 14 actions, 3 wait checkpoints</span>
             </div>
             <div class="terminal-line">
-              <span class="t-success">✓</span>
-              <span>Reconstructed network waterfall: 48 HTTP requests</span>
+              <span class="t-gutter t-success">✓</span>
+              <span class="t-content">Reconstructed network waterfall: 48 HTTP requests</span>
             </div>
             <div class="terminal-line">
-              <span class="t-warning">⚠</span>
-              <span>GraphQL nested failure detected (HTTP 200 payload envelope)</span>
+              <span class="t-gutter t-warning">⚠</span>
+              <span class="t-content">GraphQL nested failure detected (HTTP 200 payload envelope)</span>
             </div>
             <div class="terminal-line">
-              <span class="t-highlight">⚡</span>
-              <span>Fingerprint: sha256:7f4d2a9018e4 (DEDUP GATE: MISS)</span>
+              <span class="t-gutter t-highlight">⚡</span>
+              <span class="t-content">Fingerprint: sha256:7f4d2a9018e4 (DEDUP GATE: MISS)</span>
             </div>
             <div class="t-block">
-              <span style="color: var(--accent-purple); font-weight: 700;">[AI Engine: Claude 3.7 on AWS Bedrock]</span><br>
+              <strong style="color: var(--accent-purple);">[AI Engine: Claude 3.7 on AWS Bedrock]</strong><br>
               <span style="color: #cbd5e1;">Root Cause: Upstream PaymentGatewayService timeout (502 Bad Gateway).</span><br>
               <span style="color: var(--accent-emerald); font-weight: 600;">Fix PR Generated:</span> <code>tests/checkout.spec.ts</code> (+6 / -2)
             </div>
             <div class="terminal-line">
-              <span class="t-success">✓</span>
-              <span>Slack Block Kit card posted to #prod-qa-alerts in 1.4s</span>
+              <span class="t-gutter t-success">✓</span>
+              <span class="t-content">Slack Block Kit card posted to #prod-qa-alerts in 1.4s</span>
             </div>
             <div class="terminal-line">
-              <span class="t-prompt">TTR Reduction:</span>
-              <span style="color: var(--accent-cyan); font-weight: 700;">2 hours ➔ 20 minutes (83% faster)</span>
+              <span class="t-gutter t-highlight">★</span>
+              <span class="t-content"><strong style="color: var(--accent-cyan);">TTR Reduction:</strong> 2 hours ➔ 20 minutes (83% faster)</span>
             </div>
           </div>
         </div>
@@ -234,7 +240,7 @@
             <button class="scenario-btn" data-scenario="scenario3">
               <span>Scenario 3: DB Timeout (0-Token Cache Hit)</span>
             </button>
-            <button id="run-sim-btn" class="btn-primary" style="padding: 0.45rem 1rem; font-size: 0.82rem;">
+            <button id="run-sim-btn" class="btn-primary" style="height: 36px; padding: 0 1rem; font-size: 0.82rem;">
               <span>Run Simulated RCA</span>
             </button>
           </div>
@@ -244,7 +250,7 @@
         <div class="simulator-body">
           <!-- Left Column: Pipeline Stages -->
           <div class="sim-stages-column">
-            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.05em;">
+            <h4 style="font-size: 0.92rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.06em;">
               Pipeline Execution Sequence
             </h4>
 
@@ -300,11 +306,11 @@
                 <button class="output-tab" data-tab="slack">Slack Alert Preview</button>
                 <button class="output-tab" data-tab="diff">Auto-Fix PR Diff</button>
               </div>
-              <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--accent-cyan);">Live Output</span>
+              <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--accent-cyan); font-weight: 600;">Live Output</span>
             </div>
 
             <div class="output-content" id="sim-output-body">
-              <!-- Dynamically populated by js/app.js -->
+              <!-- Dynamically populated with precision key-value alignment by js/app.js -->
             </div>
           </div>
         </div>
@@ -335,7 +341,7 @@
       <div class="projects-grid">
         <!-- Featured Card: Playwright Trace Analysis Pipeline -->
         <div class="project-card featured-card" data-category="ai playwright">
-          <div>
+          <div class="featured-left">
             <div class="project-header">
               <span class="project-badge">Flagship Innovation · Coursera Architecture</span>
               <div class="project-links">
@@ -345,15 +351,16 @@
               </div>
             </div>
 
-            <h3 class="project-title">Autonomous Playwright Trace Analysis &amp; AI RCA Pipeline</h3>
-            <p class="project-desc">
-              An enterprise-grade, company-agnostic autonomous failure investigation pipeline for Playwright E2E tests. Dissects deep DOM action wait timelines, reconstructs network waterfalls (detecting HTTP 502s and silent GraphQL errors in HTTP 200 envelopes), and invokes multi-model AI (OpenAI GPT-4o, Claude 3.7 on Bedrock, Gemini 2.5, Ollama) to triage failures, identify breaking PRs, and generate fixes.
-            </p>
-
+            <h3 class="project-title" style="min-height: auto; margin-bottom: 0.65rem;">Autonomous Playwright Trace Analysis &amp; AI RCA Pipeline</h3>
+            
             <div class="project-metrics-pill">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               <span>On-Call TTR: 2 hours ➔ 20 minutes (83% reduction) · Zero-Token Cache Gate</span>
             </div>
+
+            <p class="project-desc">
+              An enterprise-grade, company-agnostic autonomous failure investigation pipeline for Playwright E2E tests. Dissects deep DOM action wait timelines, reconstructs network waterfalls (detecting HTTP 502s and silent GraphQL errors in HTTP 200 envelopes), and invokes multi-model AI (OpenAI GPT-4o, Claude 3.7 on Bedrock, Gemini 2.5, Ollama) to triage failures, identify breaking PRs, and generate fixes.
+            </p>
 
             <div class="project-tech-stack">
               <span class="tech-tag">Playwright Trace API</span>
@@ -366,17 +373,31 @@
             </div>
           </div>
 
-          <div style="display: flex; flex-direction: column; justify-content: center; background: rgba(0,0,0,0.3); border-radius: var(--radius-sm); padding: 1.5rem; border: 1px solid var(--border-color);">
-            <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-cyan); margin-bottom: 0.75rem;">
-              // Core Architectural Highlights:
+          <div class="featured-right">
+            <div>
+              <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-cyan); font-weight: 700; margin-bottom: 1rem;">
+                // Core Architectural Highlights:
+              </div>
+              <ul class="feature-list">
+                <li class="feature-list-item">
+                  <span class="item-arrow">▹</span>
+                  <div><strong>Three-Layer Streaming Reader:</strong> Ingests <code>trace.zip</code> without disk decompression penalties.</div>
+                </li>
+                <li class="feature-list-item">
+                  <span class="item-arrow">▹</span>
+                  <div><strong>GraphQL Deep-Inspection:</strong> Detects business exceptions hidden inside HTTP 200 status codes.</div>
+                </li>
+                <li class="feature-list-item">
+                  <span class="item-arrow">▹</span>
+                  <div><strong>Zero-Token Deduplication:</strong> Normalized error SHA-256 fingerprinting skips unnecessary LLM billing.</div>
+                </li>
+                <li class="feature-list-item">
+                  <span class="item-arrow">▹</span>
+                  <div><strong>Automated Fix PR Generator:</strong> Generates and verifies Playwright code repairs against Git diffs.</div>
+                </li>
+              </ul>
             </div>
-            <ul style="list-style: none; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7;">
-              <li>▹ <strong>Three-Layer Streaming Reader:</strong> Ingests <code>trace.zip</code> without disk decompression penalties.</li>
-              <li>▹ <strong>GraphQL Deep-Inspection:</strong> Detects business exceptions hidden inside HTTP 200 status codes.</li>
-              <li>▹ <strong>Zero-Token Deduplication:</strong> Normalized error SHA-256 fingerprinting skips unnecessary LLM billing.</li>
-              <li>▹ <strong>Automated Fix PR Generator:</strong> Generates and verifies Playwright code repairs against Git diffs.</li>
-            </ul>
-            <div style="margin-top: 1.25rem;">
+            <div style="margin-top: 1.5rem;">
               <a href="https://github.com/daniel-raj-s/playwright-trace-analysis-pipeline" target="_blank" class="btn-primary" style="width: 100%; justify-content: center;">
                 <span>View Full Pipeline Repository</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -396,13 +417,13 @@
             </div>
           </div>
           <h3 class="project-title">Playwright Enterprise Architecture Blueprint</h3>
-          <p class="project-desc">
-            Production-ready, highly parallelized E2E automation and synthetic monitoring framework engineered for modern CI/CD. Eliminates "works on my machine" via multi-stage Docker parity and runs dual-pipelines (PR regression + 15-min cron synthetics with instant Slack failure alerting).
-          </p>
           <div class="project-metrics-pill">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-            <span>80% Suite Runtime Reduction · 24/7 Production Synthetics</span>
+            <span>80% Suite Runtime Reduction · 24/7 Synthetics</span>
           </div>
+          <p class="project-desc">
+            Production-ready, highly parallelized E2E automation and synthetic monitoring framework engineered for modern CI/CD. Eliminates "works on my machine" via multi-stage Docker parity and runs dual-pipelines (PR regression + 15-min cron synthetics with instant Slack alerting).
+          </p>
           <div class="project-tech-stack">
             <span class="tech-tag">Playwright</span>
             <span class="tech-tag">TypeScript</span>
@@ -424,13 +445,13 @@
             </div>
           </div>
           <h3 class="project-title">Playwright Visual Regression Testing (VRT) Blueprint</h3>
-          <p class="project-desc">
-            Production-grade cross-browser, cross-device Visual Regression Testing (VRT) framework. Features pixel-match threshold controls, locator-based dynamic element masking (bypassing prices, timestamps, user tags), and automatic CSS animation freezing to eliminate false-positive visual noise.
-          </p>
           <div class="project-metrics-pill">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
             <span>Pixel-Perfect Layout Audit · Zero False Positives</span>
           </div>
+          <p class="project-desc">
+            Production-grade cross-browser, cross-device Visual Regression Testing (VRT) framework. Features pixel-match threshold controls, locator-based dynamic element masking (bypassing prices, timestamps, user tags), and automatic CSS animation freezing to eliminate false-positive visual noise.
+          </p>
           <div class="project-tech-stack">
             <span class="tech-tag">Playwright VRT</span>
             <span class="tech-tag">Element Masking</span>
@@ -451,13 +472,13 @@
             </div>
           </div>
           <h3 class="project-title">Playwright Network Interception &amp; API Mocking</h3>
-          <p class="project-desc">
-            Decoupled E2E execution framework demonstrating backend API stubbing, network interception routing, client error injection (500 Internal Server Error &amp; abrupt route abortion), and outbound POST payload schema validation without dirtying databases.
-          </p>
           <div class="project-metrics-pill">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
             <span>Sub-Second Test Execution · Fault Injection Resilience</span>
           </div>
+          <p class="project-desc">
+            Decoupled E2E execution framework demonstrating backend API stubbing, network interception routing, client error injection (500 Internal Server Error &amp; abrupt route abortion), and outbound POST payload schema validation without dirtying databases.
+          </p>
           <div class="project-tech-stack">
             <span class="tech-tag">Playwright Route API</span>
             <span class="tech-tag">Fault Injection</span>
@@ -470,7 +491,7 @@
         <!-- Project 5: Hybrid Enterprise BDD Framework -->
         <div class="project-card" data-category="enterprise playwright">
           <div class="project-header">
-            <span class="project-badge">Tegna (Premion) Architecture</span>
+            <span class="project-badge">Tegna Architecture</span>
             <div class="project-links">
               <a href="https://github.com/daniel-raj-s/playwright-ts-cucumber" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View Source on GitHub">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
@@ -478,13 +499,13 @@
             </div>
           </div>
           <h3 class="project-title">Hybrid BDD Framework: Playwright, TS &amp; Cucumber</h3>
-          <p class="project-desc">
-            Modular end-to-end automation solution for unified UI &amp; API testing. Seamlessly integrated with PostgreSQL for backend DB validation, Gherkin BDD syntax for cross-functional alignment, parallel worker threads, and multi-environment configuration (<code>.env.*</code>).
-          </p>
           <div class="project-metrics-pill">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             <span>Regression Time: 2 Days ➔ 6 Hours · Coverage: 45% ➔ 85%</span>
           </div>
+          <p class="project-desc">
+            Modular end-to-end automation solution for unified UI &amp; API testing. Seamlessly integrated with PostgreSQL for backend DB validation, Gherkin BDD syntax for cross-functional alignment, parallel worker threads, and multi-environment configuration (<code>.env.*</code>).
+          </p>
           <div class="project-tech-stack">
             <span class="tech-tag">Playwright</span>
             <span class="tech-tag">Cucumber.js</span>
@@ -498,15 +519,20 @@
         <div class="project-card" data-category="ai">
           <div class="project-header">
             <span class="project-badge arch">Agentic Automation</span>
+            <div class="project-links">
+              <span class="project-link-icon" title="Private Enterprise System" style="opacity: 0.6; cursor: default;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </span>
+            </div>
           </div>
           <h3 class="project-title">Autonomous Career Agent &amp; Dynamic ATS Tailoring Engine</h3>
-          <p class="project-desc">
-            An intelligent agentic application system combining Playwright CLI, LLM form parsing, and the Tectonic LaTeX compilation engine to autonomously discover, parse, tailor single-page ATS-compliant resumes, and navigate complex corporate application portals (Amazon, Eightfold/Phenom) with human-in-the-loop gates.
-          </p>
           <div class="project-metrics-pill">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-            <span>100% Single-Page ATS Strict Enforcement · Dynamic Keyword Injection</span>
+            <span>100% Single-Page ATS Strict Enforcement · Dynamic Tailoring</span>
           </div>
+          <p class="project-desc">
+            An intelligent agentic application system combining Playwright CLI, LLM form parsing, and the Tectonic LaTeX compilation engine to autonomously discover, parse, tailor single-page ATS-compliant resumes, and navigate complex corporate application portals with human-in-the-loop gates.
+          </p>
           <div class="project-tech-stack">
             <span class="tech-tag">Python</span>
             <span class="tech-tag">Playwright CLI</span>
@@ -527,13 +553,13 @@
             </div>
           </div>
           <h3 class="project-title">Enterprise Java Selenium &amp; Cucumber BDD Framework</h3>
-          <p class="project-desc">
-            Production Java automation framework built with Selenium WebDriver, TestNG, Maven, and ExtentReports. Implements reusable Page Object Models, Apache POI data-driven testing, and GitHub Actions/GitLab Runner CI/CD integration for high-reliability banking and enterprise systems.
-          </p>
           <div class="project-metrics-pill">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             <span>BNY Mellon &amp; TCS Tested · 150+ Manual Test Migration</span>
           </div>
+          <p class="project-desc">
+            Production Java automation framework built with Selenium WebDriver, TestNG, Maven, and ExtentReports. Implements reusable Page Object Models, Apache POI data-driven testing, and GitHub Actions/GitLab Runner CI/CD integration for high-reliability banking and enterprise systems.
+          </p>
           <div class="project-tech-stack">
             <span class="tech-tag">Java 11</span>
             <span class="tech-tag">Selenium WebDriver</span>
@@ -578,10 +604,22 @@
             </p>
 
             <ul class="role-bullets">
-              <li><strong>AI QE Intelligence Dashboard:</strong> Designed and built an AI-powered dashboard surfacing per-POD quality scores, SLO burn rates, error budgets, and bug-resolution metrics for real-time release gating.</li>
-              <li><strong>Agentic Trace-Analysis Pipeline:</strong> Engineered an autonomous Playwright trace-analysis and RCA pipeline (Claude Skill, Jenkins, AWS Bedrock) that triages failures, extracts root causes, and opens fix PRs for flaky tests — <strong>cutting on-call TTR from 2 hours to 20 minutes</strong>.</li>
-              <li><strong>Agentic a11y Remediation:</strong> Built an automated accessibility remediation pipeline that renders affected components on a real page, validates WCAG compliance fixes with Claude on Bedrock, and generates Playwright specs pre-PR.</li>
-              <li><strong>CLI Plugins &amp; Pipeline Optimization:</strong> Developed Playwright CLI plugins for test-case/test-plan generation and maintain 12+ CI/CD pipelines, slashing manual test-design effort by 30%, pipeline failures by 40%, and deployment time by 35%.</li>
+              <li class="role-bullet-item">
+                <span class="bullet-icon">▹</span>
+                <div><strong>AI QE Intelligence Dashboard:</strong> Designed and built an AI-powered dashboard surfacing per-POD quality scores, SLO burn rates, error budgets, and bug-resolution metrics for real-time release gating.</div>
+              </li>
+              <li class="role-bullet-item">
+                <span class="bullet-icon">▹</span>
+                <div><strong>Agentic Trace-Analysis Pipeline:</strong> Engineered an autonomous Playwright trace-analysis and RCA pipeline (Claude Skill, Jenkins, AWS Bedrock) that triages failures, extracts root causes, and opens fix PRs for flaky tests — <strong>cutting on-call TTR from 2 hours to 20 minutes</strong>.</div>
+              </li>
+              <li class="role-bullet-item">
+                <span class="bullet-icon">▹</span>
+                <div><strong>Agentic a11y Remediation:</strong> Built an automated accessibility remediation pipeline that renders affected components on a real page, validates WCAG compliance fixes with Claude on Bedrock, and generates Playwright specs pre-PR.</div>
+              </li>
+              <li class="role-bullet-item">
+                <span class="bullet-icon">▹</span>
+                <div><strong>CLI Plugins &amp; Pipeline Optimization:</strong> Developed Playwright CLI plugins for test-case/test-plan generation and maintain 12+ CI/CD pipelines, slashing manual test-design effort by 30%, pipeline failures by 40%, and deployment time by 35%.</div>
+              </li>
             </ul>
 
             <div class="role-skills-strip">
@@ -614,9 +652,18 @@
             </p>
 
             <ul class="role-bullets">
-              <li><strong>Hybrid Framework from Scratch:</strong> Built a hybrid automation framework from the ground up with Playwright, TypeScript, and Cucumber.js, raising UI/API regression coverage from <strong>45% to 85%</strong> and cutting regression cycle time from <strong>2 days to 6 hours</strong>.</li>
-              <li><strong>SonarQube Quality Gates:</strong> Embedded SonarQube static analysis directly into CI/CD pipelines, eliminating critical code-quality violations by 30% pre-merge.</li>
-              <li><strong>Stakeholder BDD Alignment:</strong> Bridged requirements between business analysts and developers by standardizing reusable Gherkin step definitions and Postgres DB validation assertions.</li>
+              <li class="role-bullet-item">
+                <span class="bullet-icon">▹</span>
+                <div><strong>Hybrid Framework from Scratch:</strong> Built a hybrid automation framework from the ground up with Playwright, TypeScript, and Cucumber.js, raising UI/API regression coverage from <strong>45% to 85%</strong> and cutting regression cycle time from <strong>2 days to 6 hours</strong>.</div>
+              </li>
+              <li class="role-bullet-item">
+                <span class="bullet-icon">▹</span>
+                <div><strong>SonarQube Quality Gates:</strong> Embedded SonarQube static analysis directly into CI/CD pipelines, eliminating critical code-quality violations by 30% pre-merge.</div>
+              </li>
+              <li class="role-bullet-item">
+                <span class="bullet-icon">▹</span>
+                <div><strong>Stakeholder BDD Alignment:</strong> Bridged requirements between business analysts and developers by standardizing reusable Gherkin step definitions and Postgres DB validation assertions.</div>
+              </li>
             </ul>
 
             <div class="role-skills-strip">
@@ -648,9 +695,18 @@
             </p>
 
             <ul class="role-bullets">
-              <li><strong>Java Selenium Framework:</strong> Designed and implemented a Java Selenium framework (JUnit, TestNG, Maven) with a reusable Page Object Model and Apache POI for data-driven testing.</li>
-              <li><strong>GitLab Runner CI/CD Integration:</strong> Integrated automated test suites into GitLab Runner CI/CD pipelines, reducing manual test execution effort by 25%.</li>
-              <li><strong>Manual-to-Automated Migration:</strong> One of 3 automation engineers supporting a 20-member QA team; championed the migration of <strong>150+ manual regression test cases</strong> to automated suites, reducing manual testing workload by <strong>40%</strong>.</li>
+              <li class="role-bullet-item">
+                <span class="bullet-icon">▹</span>
+                <div><strong>Java Selenium Framework:</strong> Designed and implemented a Java Selenium framework (JUnit, TestNG, Maven) with a reusable Page Object Model and Apache POI for data-driven testing.</div>
+              </li>
+              <li class="role-bullet-item">
+                <span class="bullet-icon">▹</span>
+                <div><strong>GitLab Runner CI/CD Integration:</strong> Integrated automated test suites into GitLab Runner CI/CD pipelines, reducing manual test execution effort by 25%.</div>
+              </li>
+              <li class="role-bullet-item">
+                <span class="bullet-icon">▹</span>
+                <div><strong>Manual-to-Automated Migration:</strong> One of 3 automation engineers supporting a 20-member QA team; championed the migration of <strong>150+ manual regression test cases</strong> to automated suites, reducing manual testing workload by <strong>40%</strong>.</div>
+              </li>
             </ul>
 
             <div class="role-skills-strip">
@@ -865,10 +921,11 @@
             Type <span style="color: var(--accent-cyan); font-weight: 700;">help</span> to see all commands, or click any command badge above.
           </div>
           <div class="terminal-line">
-            <span class="t-prompt">daniel@sdet:~$</span> <span class="t-cmd">whoami</span>
+            <span class="t-gutter t-prompt">$</span>
+            <span class="t-content t-cmd">whoami</span>
           </div>
-          <div class="t-block">
-            <span class="t-highlight">Daniel Raj S</span> — Agentic Quality Engineer &amp; SDET @ Coursera.<br>
+          <div class="t-block" style="margin-left: 0;">
+            <strong style="color: var(--accent-cyan);">Daniel Raj S</strong> — Agentic Quality Engineer &amp; SDET @ Coursera.<br>
             Focus: Building autonomous quality loops, reducing flaky tests, and cutting on-call TTR with Playwright and Claude.
           </div>
         </div>
@@ -958,7 +1015,7 @@
     <div class="container">
       <div class="resume-cta-box">
         <div class="resume-cta-text">
-          <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700;">
+          <span class="resume-cta-badge">
             ATS-Optimized &amp; Verified
           </span>
           <h3>Looking for a Senior SDET / AI Quality Engineer?</h3>
@@ -1001,7 +1058,7 @@
             <div class="contact-icon-box">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </div>
-            <div>
+            <div class="contact-text-group">
               <div class="contact-label">Direct Email</div>
               <div class="contact-val">danielraj2@outlook.com</div>
             </div>
@@ -1012,7 +1069,7 @@
             <div class="contact-icon-box">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
             </div>
-            <div>
+            <div class="contact-text-group">
               <div class="contact-label">Phone &amp; WhatsApp</div>
               <div class="contact-val">+91 8124263675</div>
             </div>
@@ -1023,10 +1080,10 @@
             <div class="contact-icon-box">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
             </div>
-            <div>
+            <div class="contact-text-group">
               <div class="contact-label">Location &amp; Work Model</div>
               <div class="contact-val">Chennai, Tamil Nadu, India</div>
-              <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">
+              <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;">
                 Open to Remote anywhere in India or Onsite/Hybrid in Chennai
               </div>
             </div>
@@ -1036,7 +1093,7 @@
             <div class="contact-icon-box">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             </div>
-            <div>
+            <div class="contact-text-group">
               <div class="contact-label">Local Time (Chennai, IST)</div>
               <div class="contact-val" id="chennai-clock" style="font-family: var(--font-mono); color: var(--accent-cyan);">
                 Asia/Kolkata
@@ -1058,10 +1115,10 @@
 
         <!-- Quick Message Form -->
         <div class="contact-card">
-          <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; line-height: 1.3;">
             Send a Direct Note
           </h3>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;">
             Fills a formatted email draft directly to <code>danielraj2@outlook.com</code>.
           </p>
 
