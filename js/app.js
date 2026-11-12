@@ -119,7 +119,7 @@ const SIMULATOR_DATA = {
     traceDuration: "31,450ms (TIMEOUT)",
     fingerprint: "sha256:7f4d2a9018e47bca8831f290d182",
     dedupVerdict: "CACHE MISS · New error fingerprint ingested",
-    aiModel: "Claude 3.7 Sonnet (AWS Bedrock)",
+    aiModel: "Claude Opus 5.5 (AWS Bedrock)",
     summary: "Checkout CTA remained permanently disabled because upstream `/api/v2/payment/session` threw 502 Bad Gateway and the companion GraphQL query masked error in HTTP 200 envelope.",
     failingAssertion: "tests/e2e/checkout-flow.spec.ts:84, expect(checkoutBtn).toBeEnabled() timed out",
     trigger: "POST /graphql/checkout-session returned 200 with response.errors[0].message = 'Downstream timeout: ServiceUnavailable'",
@@ -142,7 +142,7 @@ const SIMULATOR_DATA = {
     traceDuration: "420ms (DETERMINISTIC)",
     fingerprint: "sha256:1a8c4f923bde00911762cba182f0",
     dedupVerdict: "CACHE MISS · Prompt assembled with Git commit diff",
-    aiModel: "GPT-4o (OpenAI Adapter)",
+    aiModel: "GPT-6 (OpenAI Reasoning Engine)",
     summary: "Playwright strict-mode locator resolution failed because frontend A/B test added a secondary mobile 'Enroll Now' button matching `getByRole('button', { name: /enroll/i })`.",
     failingAssertion: "tests/c4b/enterprise-catalog.spec.ts:42, Error: strict mode violation: locator resolved to 2 elements",
     trigger: "Resolved to <button class='btn-desktop'>Enroll Now</button> and <button class='btn-mobile-sticky'>Enroll Now</button>",
@@ -261,7 +261,7 @@ function runSimulation() {
       <div style="padding: 2rem; text-align: center; color: var(--text-secondary);">
         <div class="pulse-dot" style="margin: 0 auto 1rem; width: 14px; height: 14px;"></div>
         <p style="font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent-cyan);">
-          ${isCache ? '[Stage 3/4] Cache HIT! Skipping LLM invocation (0 tokens spent)...' : '[Stage 3/4] Invoking Claude 3.7 Sonnet on Bedrock with extracted trace context...'}
+          ${isCache ? '[Stage 3/4] Cache HIT! Skipping LLM invocation (0 tokens spent)...' : '[Stage 3/4] Invoking Claude Opus 5.5 on Bedrock with extracted trace context...'}
         </p>
       </div>
     `;
@@ -441,7 +441,7 @@ function initTerminal() {
     skills: () => `
 <div class="t-block">
   <span class="t-highlight">Technical Arsenal:</span><br>
-  • <strong>Agentic AI:</strong> Claude Code/Skills, AWS Bedrock, Multi-Model RCA, Playwright MCP, Local LLMs<br>
+  • <strong>Agentic AI:</strong> Claude Opus 5.5, GPT-6, Claude Code/Skills, AWS Bedrock, Multi-Model RCA, Playwright MCP, Local LLMs<br>
   • <strong>Test Automation:</strong> Playwright (TS/Python), Selenium (Java), Cucumber BDD, Rest Assured, Appium, a11y (axe-core)<br>
   • <strong>Observability:</strong> SLO burn rates, error budgets, quality scoring, Allure, Slack Block Kit<br>
   • <strong>CI/CD & Cloud:</strong> GitHub Actions, GitLab CI/CD, Jenkins, Docker, AWS (EC2/S3), SonarQube<br>

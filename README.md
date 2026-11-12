@@ -25,7 +25,7 @@ This repository hosts the source code for my personal portfolio website, enginee
 
 ### ✨ Key Interactive Features
 
-1. **Interactive Trace Analysis Simulator**: Experience my production **Autonomous Playwright Trace Analysis Pipeline** directly in the browser, simulating DOM wait timeline extraction, zero-token deduplication error hashing, multi-model AI diagnosis (Claude 3.7 on Bedrock, GPT-4o, Gemini 2.5), and automatic fix PR generation.
+1. **Interactive Trace Analysis Simulator**: Experience my production **Autonomous Playwright Trace Analysis Pipeline** directly in the browser, simulating DOM wait timeline extraction, zero-token deduplication error hashing, multi-model AI diagnosis (Claude Opus 5.5 on Bedrock, GPT-6, Gemini 3.0 Pro), and automatic fix PR generation.
 2. **Interactive Developer CLI Terminal**: A functional browser-based terminal shell. Run commands like `skills`, `experience`, `projects`, `stats`, `resume`, and `contact` or click quick-command chips.
 3. **Dynamic Filtering**: Filter open-source engineering blueprints across *AI & Agentic Systems*, *Playwright Blueprints*, and *Enterprise BDD & CI/CD*.
 4. **Verified Single-Page ATS Resume**: Instant in-browser preview and one-click download for `Daniel_Raj_S_SDET_Resume.pdf`.
@@ -37,7 +37,7 @@ This repository hosts the source code for my personal portfolio website, enginee
 
 | Blueprint / Repository | Technology Stack | Key Business Value |
 |---|---|---|
-| [**playwright-trace-analysis-pipeline**](https://github.com/daniel-raj-s/playwright-trace-analysis-pipeline) | Playwright Trace API, Claude 3.7 / GPT-4o, Bedrock, GHA | Autonomous AI failure triage, 3-layer trace extraction, zero-token deduplication, cutting on-call TTR from 2 hours to 20 minutes. |
+| [**playwright-trace-analysis-pipeline**](https://github.com/daniel-raj-s/playwright-trace-analysis-pipeline) | Playwright Trace API, Claude Opus 5.5 / GPT-6, Bedrock, GHA | Autonomous AI failure triage, 3-layer trace extraction, zero-token deduplication, cutting on-call TTR from 2 hours to 20 minutes. |
 | [**playwright-enterprise-architecture-blueprint**](https://github.com/daniel-raj-s/playwright-enterprise-architecture-blueprint) | TypeScript, Playwright, Multi-stage Docker, Allure, Slack | Highly parallelized zero-flake E2E suite cutting runtime by 80%, plus 15-min cron synthetic health monitoring. |
 | [**visual-regression**](https://github.com/daniel-raj-s/visual-regression) | Playwright, Pixelmatch, Dynamic Element Masking | Cross-browser & multi-viewport layout validation, dynamic element masking, and animation freezing for zero false positives. |
 | [**network-interception**](https://github.com/daniel-raj-s/network-interception) | Playwright Route API, Fault Injection, JSON Schema | Decouples E2E tests from databases & flaky 3rd-party APIs, boosting execution speed to sub-second runs and testing client error resilience. |
